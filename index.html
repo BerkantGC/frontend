@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haberler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Haberler</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ekonomi</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Finans</a></li>
+              <li><a class="dropdown-item" href="#">Borsa</a></li>
+              <li><a class="dropdown-item" href="#">Kripto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Gündem</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Son Dakika</a></li>
+              <li><a class="dropdown-item" href="#">Bu hafta popüler</a></li>
+              <li><a class="dropdown-item" href="#">Hava Durumu</a></li>
+              <li><a class="dropdown-item" href="#">Spor</a></li>
+            </ul>
+          </li>
+          <!-- Add other menu items similarly -->
+        </ul>
+      </div>
+    </div>
+    
+</nav>
+
+  <div class="container mt-4">
+    <div id="financeSection" class="w-full d-flex flex-row align-items-center" style="background-color: lightgray;"></div>
+  </div>
+
+  <!-- Ads -->
+  <a href="https://www.youtube.com/" target="_blank" class="sticky-ad-left" id="adLeft">
+    <img src="assets/ads/ad1.jpg" alt="Ad" />
+    <button class="close-ad" onclick="closeAd('adLeft')">X</button>
+  </a>
+  <a href="https://www.youtube.com/" target="_blank" class="sticky-ad-right" id="adRight">
+    <img src="assets/ads/ad2.webp" alt="Ad" />
+    <button class="close-ad" onclick="closeAd('adRight')">X</button>
+  </a>
+
+  <!-- Weather Section -->
+  <div class="container my-4">
+    <h2>Weather Forecast</h2>
+    <div class="row" id="weatherContainer">
+      <!-- Inject weather forecast via JS -->
+    </div>
+  </div>
+
+<!-- Main Slider -->
+<div id="newsCarousel" class="carousel slide carousel-sm w-50 align-self-center" data-bs-ride="carousel">
+    <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Indicators will be injected here -->
+    </div>
+    <div class="carousel-inner" id="sliderNews">
+            <!-- News items will be injected here -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

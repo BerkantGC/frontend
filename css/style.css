@@ -1,0 +1,42 @@
+.sticky-ad-left,
+.sticky-ad-right {
+  position: fixed;
+  top: 100px;
+  width: 120px;
+  z-index: 999;
+}
+.sticky-ad-left {
+  left: 0;
+}
+.sticky-ad-right {
+  right: 0;
+}
+.sticky-ad-left img,
+.sticky-ad-right img {
+  width: 100%;
+}
+.close-ad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#financeContainer .col-md-2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
